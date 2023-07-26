@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    margin-top: 40vh;
+}
+.rotate{
+    transition: all 0.5s ease;
+}
+.ch-down{
+    transform: rotateZ(90deg);
+    transition: all 0.5s ease;
+}
+.hv-bg-gradient1{
+    background-color: rgb(18, 18, 18);
+    transition: all 0.5s ease;
+}
+.wfc{
+    width: fit-content;
+}
+.rounded-5{
+    border-radius: 5px;
+}
+.pd-20{
+    padding: 15px;
+}
+.col-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.row-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.dropdownlist{
+    display: none;
+    width: 100%;
+}
+.white-full-line{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.249);
+    display: none;
+}
+.hv-bg-gradient1:hover{
+    background: none;
+    background-image: linear-gradient(to bottom, rgb(255, 87, 87), rgb(80, 80, 255));
+    padding-bottom: 180px;
+}
+.hv-bg-gradient1:hover .ch-down{
+    transform: rotateZ(-90deg);
+}
+.hv-bg-gradient1:hover .rotate{
+    transform: rotateZ(180deg);
+}
+.hv-bg-gradient1:hover .dropdownlist{
+    display: flex;
+    position: absolute;
+    top: 65px;
+}
+.hv-bg-gradient1:hover .white-full-line{
+    display: flex;
+}
+.list-item{
+    width: 100%;
+}
+.list-item:hover{
+    background-color: rgba(0, 0, 0, 0.203);
+}
+
